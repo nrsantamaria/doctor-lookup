@@ -13,7 +13,11 @@ $(document).ready(function(){
     event.preventDefault();
     this.reset();
     var ailment = $('#ailment').val();
-    $('.output').show()
+    $('.output').show();
+    $('#refresh').show();
     newDoctor.getDoctors(ailment, docInfo);
+  });
+  $('#refresh').click(function() {
+    location.reload();
   });
 });
