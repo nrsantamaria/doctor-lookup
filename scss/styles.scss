@@ -1,10 +1,17 @@
 $border: 1px solid black;
-$green: #72D9C6;
+$green: #94D9E2;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 
 .jumbotron {
   background-color: $green;
   padding: 5%;
   color: white;
+  h1 {
+    font-family: 'Josefin Slab', serif;
+  }
 }
 
 input {
@@ -25,7 +32,7 @@ input {
 
 img {
   float: left;
-  height: 205px;
+  height: 190px;
 }
 table {
   border: $border;

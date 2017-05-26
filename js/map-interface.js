@@ -8,7 +8,7 @@ $(document).ready(function() {
     styles: [
       {
         stylers: [
-          { hue: "#00ff6f" },
+          { hue: "#94D9E2" },
           { saturation: -50 }
         ]
       }, {

@@ -7,7 +7,7 @@ var docInfo = function(practices, photo, lat, lon) {
     styles: [
       {
        stylers: [
-          { hue: "#00ff6f" },
+          { hue: "#94D9E2" },
           { saturation: -50 }
         ]
       }, {
@@ -35,12 +35,19 @@ var docInfo = function(practices, photo, lat, lon) {
     ]
   });
   practices.forEach(function(practice) {
+    var infowindow = new google.maps.InfoWindow({
+    content: practice.name
+    });
     var marker = new google.maps.Marker({
       position: {lat: practice.lat, lng: practice.lon},
       map: map,
       draggable: true,
       animation: google.maps.Animation.DROP,
+      title: practice.name,
       icon: "img/medical_sm.png"
+    });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
     });
     $('.output > tbody:last-child').append("<tr>" + "<td>" + practice.name + "</td>" + "<td>" + practice.visit_address.street + " " + practice.visit_address.city + "," + practice.visit_address.state + " " + practice.visit_address.zip + "</td>" + "<td>" + practice.phones[0].number + "</td>" + "<td>" + "<img src='" + photo + "'>" + "</td>" + "</tr>");
   });
