@@ -11,8 +11,8 @@
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Find a Doctor</h1>
-      <h3>Grumpy? Sleepy? Sneezy? Find a Doc fast!</h3>
+      <h1>Feeling a bit...</h1>
+      <h2>Grumpy? Sleepy? Sneezy? Find a Doc fast!</h2>
     </div>
     <div class="container">
       <h3>Type in a description of your symptom and find a doctor near you!</h3>
@@ -21,9 +21,18 @@
           <label for="ailment">Enter in your symptom:</label>
           <input type="text" name="ailment" id="ailment">
         </div>
-        <button type="submit" class="btn btn-info">Submit</button>
+        <button type="submit" class="btn btn-success">Submit</button>
       </form>
-      <div class="output"></div>
+      <br>
+      <table class="output">
+        <tbody>
+          <tr>
+            <th>Doctor Name</th>
+            <th>Doctor Address</th>
+            <th>Doctor Phone</th>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </body>
 </html>

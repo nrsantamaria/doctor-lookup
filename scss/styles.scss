@@ -1,0 +1,43 @@
+$border: 1px solid black;
+$green: #72D9C6;
+
+.jumbotron {
+  background-color: $green;
+  padding: 5%;
+  color: white;
+}
+
+input {
+  border-radius: 5px;
+}
+.btn-success {
+  background-color: $green;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: grey;
+}
+
+.btn-success:active {
+  background-color: grey;
+}
+
+.output {
+  display: none;
+}
+
+table {
+  border: $border;
+  padding: 3px;
+  th {
+    color: white;
+    background: $green;
+    border: $border;
+    padding: 3px;
+  }
+  td {
+    border: $border;
+    padding: 3px;
+  }
+}
