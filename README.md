@@ -60,4 +60,4 @@ API from [Better Doctor](https://developer.betterdoctor.com/)
 
 Copyright (c) 2017 **_Nicole Santamaria_**
 
-![Home page](/images/homepage-screenshot.png)
+![Home page](/img/homepage-screenshot.png)
