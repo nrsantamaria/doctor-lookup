@@ -1,8 +1,8 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
-var docInfo = function(practices) {
+var docInfo = function(practices, photo) {
   practices.forEach(function(practice) {
-    $('.output > tbody:last-child').append("<tr>" + "<td>" + practice.name + "</td>" + "<td>" + practice.visit_address.street + " " + practice.visit_address.city + "," + practice.visit_address.state + " " + practice.visit_address.zip + "</td>" + "<td>" + practice.phones[0].number + "</td>" + "</tr>");
+    $('.output > tbody:last-child').append("<tr>" + "<td>" + practice.name + "</td>" + "<td>" + practice.visit_address.street + " " + practice.visit_address.city + "," + practice.visit_address.state + " " + practice.visit_address.zip + "</td>" + "<td>" + practice.phones[0].number + "</td>" + "<td>" + "<img src='" + photo + "'>" + "</td>" + "</tr>");
   });
 };
 

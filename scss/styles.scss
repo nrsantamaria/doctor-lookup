@@ -15,11 +15,7 @@ input {
   border: none;
 }
 
-.btn-success:hover {
-  background-color: grey;
-}
-
-.btn-success:active {
+.btn-success:hover, .btn-success:active, .btn-success:focus {
   background-color: grey;
 }
 
@@ -39,9 +35,19 @@ table {
     background: $green;
     border: $border;
     padding: 3px;
+    text-align: center;
   }
   td {
     border: $border;
     padding: 3px;
   }
+}
+
+footer img {
+  display:block;
+  height: 75px;
+  margin: -20px -50px;
+  position:relative;
+  top:50%;
+  left:50%;
 }
