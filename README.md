@@ -52,7 +52,8 @@ _Please contact Nicole Santamaria at NicoleRSantamaria@gmail.com if you have any
 
 ### API
 
-API from [Better Doctor](https://developer.betterdoctor.com/)
+* API from [Better Doctor](https://developer.betterdoctor.com/)
+* API from [Google Maps](https://developers.google.com/maps/documentation/javascript/)
 
 ### License
 
